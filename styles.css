@@ -1,0 +1,9 @@
+#three{
+		width: 7em;
+		height: 7em;
+		background-color: purple;
+		border: 2px solid black;
+		color: red;
+		font-size: large;
+		text-align: center;
+	};
