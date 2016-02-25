@@ -1,9 +1,25 @@
-#three{
-		width: 7em;
-		height: 7em;
-		background-color: purple;
-		border: 2px solid black;
-		color: red;
-		font-size: large;
-		text-align: center;
-	};
+.block1{
+	background: purple;
+	width: 10em;
+	height: 10em;
+	margin: 10px;
+	text-align: center;
+	color: red;
+}
+
+.block2 {
+	background: purple;
+	width: 10em;
+	height: 10em;
+	margin: 10px;
+	text-align: center;
+	color: red;
+}
+.block3 {
+	background: purple;
+	width: 10em;
+	height: 10em;
+	margin: 10px;
+	text-align: center;
+	color: red;
+}
