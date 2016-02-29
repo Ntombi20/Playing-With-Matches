@@ -23,3 +23,7 @@
 	text-align: center;
 	color: red;
 }
+
+.row{
+	display: inline;
+}
