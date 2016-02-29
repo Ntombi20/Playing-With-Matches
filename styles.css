@@ -1,29 +1,8 @@
-.block1{
+.block{
 	background: purple;
 	width: 10em;
 	height: 10em;
 	margin: 10px;
 	text-align: center;
 	color: red;
-}
-
-.block2 {
-	background: purple;
-	width: 10em;
-	height: 10em;
-	margin: 10px;
-	text-align: center;
-	color: red;
-}
-.block3 {
-	background: purple;
-	width: 10em;
-	height: 10em;
-	margin: 10px;
-	text-align: center;
-	color: red;
-}
-
-.row{
-	display: inline;
-}
+};

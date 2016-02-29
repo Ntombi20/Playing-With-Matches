@@ -1,8 +1,12 @@
+function randomRange(min, max) {
 
-function randomRange(myMin, myMax) {
-
-  return Math.floor(Math.random() * (myMax - myMin) + myMin);// Change this line
+  return Math.floor(Math.random() * (max - min) + min);
 
 }
 var myRandom = randomRange(1, 9);
-console.log(myRandom);
+
+document.getElementById('block1').innerHTML = myRandom;
+document.getElementById('block2').innerHTML = myRandom;
+document.getElementById('block3').innerHTML = myRandom;
+
+
