@@ -5,11 +5,11 @@
 	margin: 10px;
 	text-align: center;
 	color: red;
-};
+}
 
-.highlight{
-	background: gray;
-};
+.purple{
+	background: purple;
+}
 
 /*.message {
   left: 25%;
