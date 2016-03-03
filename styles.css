@@ -1,8 +1,24 @@
 .block{
-	background: purple;
+	background: rgb(72,	182, 131);
 	width: 10em;
 	height: 10em;
 	margin: 10px;
 	text-align: center;
 	color: red;
 };
+
+.highlight{
+	background: gray;
+};
+
+/*.message {
+  left: 25%;
+  right: 25%;
+  border: solid red;
+  border-radius: 0.25em;
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: red;
+  color: black;
+};*/
