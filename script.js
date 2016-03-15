@@ -1,32 +1,44 @@
 function randomRange(min, max) {
 
-  return Math.floor(Math.random() * (max - min) + min);
+  return Math.floor(Math.random() * (9 - 1) + 1);
 
 }
-
 var myRandom = randomRange(1, 9);
-document.getElementById('block1').innerHTML = myRandom;
-if (myRandom >3 && myRandom<5) {
-
-	block1.classList.add("purple");
-};
-
+var myRandom1 = randomRange(1, 9);
 var myRandom2 = randomRange(1, 9);
-document.getElementById('block2').innerHTML = myRandom2;
-if (myRandom2 >3 && myRandom<5) {
 
-	block2.classList.add("purple");
-};
+var block = document.querySelectorAll('.block');
 
-var myRandom3 = randomRange(1, 9);
-document.getElementById('block3').innerHTML = myRandom3;
-if (myRandom3 >3 && myRandom<5) {
+function update(){
+	var elem = document.getElementsByClassName('block');
 
-	block3.classList.add("purple");
-};
+		for (var i = 0; i < elem.length; i++) {
+			elem[0].innerHTML = myRandom;
+			elem[1].innerHTML = myRandom1;
+			elem[2].innerHTML = myRandom2;
+		}
 
-var displayMessage = function(text){
+	if (elem[0].innerHTML === elem[1].innerHTML) {
+		elem[0].classList.add("purple");
+		elem[1].classList.add("purple");
+		
+	}
+	if (elem[0].innerHTML === elem[2].innerHTML) {
+		elem[0].classList.add("purple");
+		elem[2].classList.add("purple");
+	
+	}
+	if (elem[1].innerHTML === elem[2].innerHTML) {
+		elem[2].classList.add("purple");
+		elem[1].classList.add("purple");
+		
+	}
+
+} 
+
+update();
+
+function display(text){
     var message = document.getElementById("message");
     message.innerHTML = text;
-};
-
+};	
