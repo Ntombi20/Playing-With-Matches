@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The title of my page</title>
+	<title>Playing with matches</title>
 	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-	<!-- HTML goes here -->
+	
+  <table width="20%" border="1">
+  <tr>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+  </tr>
+  <tr>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+  </tr>
+  <tr>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+    <td><div class="block"></div></td>
+  </tr>
 
-<div class = "row">
-	<div class="block" id="block1">6</div>
-	<div class="block" id="block2">9</div>
-	<div class="block" id="block3">2</div>
-</div>
-
-<div class="message">
+<!-- <div class="message">
     <p id="message">Messages</p>
 </div>
+ -->
+<div><button id="button" onClick="updateHTML">Press to get New Set</div>
 
-	<script type="text/javascript" src="script.js"></script>	
+	<script type="text/javascript" src="script.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 </body>
 </html>
