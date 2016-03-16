@@ -16,8 +16,8 @@ var myRandom8 = randomRange(1, 3);
 
 function updateHTML(){
 
-	var block = document.querySelectorAll('.block');
 	var button = document.getElementById('button');
+	var block = document.querySelectorAll('.block');
 	button.addEventListener('click', function() {
 		//for (var i = 0; i < message.length; i++){
 			for (var i = 0; i < block.length; i++) {
