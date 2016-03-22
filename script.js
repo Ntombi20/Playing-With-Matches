@@ -1,21 +1,20 @@
 function randomRange(min, max) {
 
-  return Math.floor(Math.random() * (6 - 1) + 1);
+  return Math.floor(Math.random() * (4 - 1) + 1);
 
 }
 
-function displayMessage(text){
-    var displayMessage = document.getElementById("message");
-    displayMessage.innerHTML = text;
+function messages(text){
+    document.getElementById("message").innerHTML = text;
 }
 
 var button = document.getElementById('button');
 var block = document.querySelectorAll('.block');
 
-button.addEventListener('click', function update() {
-	
-	var display = [];
+function update(){
 
+	var display = [];
+    
 	for (var d = 0; d < block.length; d++) {
 		block[d].classList.remove("purple");
 		block[d].innerHTML = randomRange();
@@ -82,12 +81,12 @@ button.addEventListener('click', function update() {
             display.push(block[2].innerHTML+ " and " + block[4].innerHTML + 
         		" and " + block[6].innerHTML + " 2nd diagonal is matching");
         }	
+ 
+     	return display.join("<br>");
+}
 
-    var msg = display.join("<br>");
-     	return msg;
-    
+update();
+
+button.addEventListener('click', function() {
+    messages(update());
 })
-
-
-
-	
