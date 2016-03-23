@@ -1,6 +1,6 @@
 function randomRange(min, max) {
 
-  return Math.floor(Math.random() * (4 - 1) + 1);
+  return Math.floor(Math.random() * (max - min) + min);
 
 }
 
@@ -10,6 +10,7 @@ function messages(text){
 
 var button = document.getElementById('button');
 var block = document.querySelectorAll('.block');
+console.log(block);
 
 function update(){
 
@@ -17,7 +18,7 @@ function update(){
     
 	for (var d = 0; d < block.length; d++) {
 		block[d].classList.remove("purple");
-		block[d].innerHTML = randomRange();
+		block[d].innerHTML = randomRange(1, 9);
 	}
 				
 		/*rows*/
